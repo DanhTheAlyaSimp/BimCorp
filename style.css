@@ -54,8 +54,7 @@ small {font-size: 0.600rem; /* 9.6px */}
 }
 
 #mission{
-    margin: 2rem;
-    margin-top: 4rem;
+    margin: max(5rem,8vw);
     display: flex;
     flex-direction: column;
 }
@@ -74,14 +73,27 @@ small {font-size: 0.600rem; /* 9.6px */}
     display: block;
     width: 50%;
     height: 100%;
+    font-size: 1.066rem;
 }
 
 #mission-wrapper img{
-    width: 50%;
-    max-height: 10rem;
-    justify-self: flex-start;
+    width: 45%;
+    height: 14rem;
+    align-self: center;
 }
 
 
+@media (max-width: 800px){
+    #mission-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    #mission-wrapper p{
+        width: 100%;
+    }
+    #mission-wrapper img{
+        align-self: center;
+    }
+}
 
 
